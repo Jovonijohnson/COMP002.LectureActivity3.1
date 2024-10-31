@@ -20,7 +20,3 @@ function firstFunction(diameter) {
     console.log(`The circumference is: ${circumference}`);
     console.log("Finished call to second function.");
 }
-function causeStackOverflow() {
-    return causeStackOverflow(); // Recursive call 
-}
-// causeStackOverflow();
