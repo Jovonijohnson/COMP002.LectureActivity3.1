@@ -1,7 +1,6 @@
 function greet(name) {
     return `Welcome2thedungeon, ${name}!`;
 }
-
 console.log(greet("some name")); // Outputs: Welcome2thedungeon, some name!
 
 function getCircumference(diameter) { const pi = Math.PI; }
@@ -21,3 +20,7 @@ function firstFunction(diameter) {
     console.log(`The circumference is: ${circumference}`);
     console.log("Finished call to second function.");
 }
+function causeStackOverflow() {
+    return causeStackOverflow(); // Recursive call 
+}
+// causeStackOverflow();
